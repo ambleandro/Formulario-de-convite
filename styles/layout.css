@@ -1,0 +1,41 @@
+#app {
+  display: grid;
+  grid-template-columns: 32.8% 67.2%;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+aside {
+  padding: 1.25rem .625rem 1.25rem 1.25rem;
+
+  & .aside-container {
+    max-width: 25rem;
+    height: 45.5rem;
+
+    border-radius: .75rem;
+    
+    margin-left: auto;
+    background-image: url(../assets/Background.png);
+    background-size: 100% 100%;
+    background-position: center;
+  }
+}
+
+main {
+  overflow: auto;
+  padding: 1.25rem 1.25rem 1.25rem .625rem; 
+  max-width: 51.25rem;
+
+  & .main-container {
+    background-color: var(--shape-body);
+    border-radius: .75rem; 
+    padding: 5rem 8.125rem;
+
+    h1 {
+      font: var(--heading-md);
+      color: var(--text-heading);
+    }
+  }
+}
+

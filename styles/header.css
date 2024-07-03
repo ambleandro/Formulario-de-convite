@@ -1,0 +1,19 @@
+.aside-container {
+  padding: 2rem;
+
+  img{
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font: var(--logo);
+    color: var(--pink);
+    margin-bottom: .25rem;
+  }
+
+  p {
+    font: var(--body-md);
+    color: var(--text-heading);
+  }
+}

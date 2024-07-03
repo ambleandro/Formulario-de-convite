@@ -40,13 +40,18 @@
   --font-family-b: "Baloo 2", sans-serif;
   --font-family-l: "Leckerli One", cursive;
 
-  --logo: 400 2.5rem/auto var(--font-family-l);
+  --logo: 400 2.5rem/100% var(--font-family-l);
 
-  --heading-md: 700 1.75rem/auto var(--font-family-b);
-  --heading-sm: 700 1.125rem/auto var(--font-family-b);
+  --heading-md: 700 1.75rem/100% var(--font-family-b);
+  --heading-sm: 700 1.125rem/100% var(--font-family-b);
 
-  --body-md: 400 1rem/auto var(--font-family);
-  --body-sm: 400 .875rem/auto var(--font-family);
-  --body-xs: 400 .75rem/auto var(--font-family);
+  --body-md: 400 1rem/100% var(--font-family);
+  --body-sm: 400 .875rem/100% var(--font-family);
+  --body-xs: 400 .75rem/100% var(--font-family);
 
+}
+
+body {
+  overflow: hidden;
+  background-color: var(--shape-background);
 }
