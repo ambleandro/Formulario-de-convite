@@ -245,67 +245,67 @@ fieldset.custom {
     background-color: var(--cyan);
     }
 
-    & .color-inner input[type="radio"]:hover {
-      border-color: var(--shape-hover);
-    }
+  & .color-inner input[type="radio"]:hover {
+    border-color: var(--shape-hover);
+  }
 
-    & .color-inner input[type="radio"]:checked {
-      border: 1px solid var(--brand-light);
-    }
+  & .color-inner input[type="radio"]:checked {
+    border: 1px solid var(--brand-light);
+  }
 
-    & .theme-wrapper {
-      font: var(--body-sm);
-      color: var(--text-body);
-      margin-top: 1.75rem;
+  & .theme-wrapper {
+    font: var(--body-sm);
+    color: var(--text-body);
+    margin-top: 1.75rem;
 
-      & .theme-options {
-        max-width: 35rem;
-        margin-top: 1rem;
+    & .theme-options {
+      max-width: 35rem;
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: .5rem;
+
+      & .theme-inner {
+        position: relative;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: .5rem;
+        justify-items: center;
+        width: 8.375rem;
+        background-color: var(--shape-button);
+        border-radius: .5rem;
+        border: 1px solid var(--shape-button);
+        padding: .25rem;
 
-        & .theme-inner {
-          position: relative;
-          display: grid;
-          justify-items: center;
-          width: 8.375rem;
-          background-color: var(--shape-button);
-          border-radius: .5rem;
-          border: 1px solid var(--shape-button);
-          padding: .25rem;
+      & img {
+        margin-bottom: .5rem;
+        width: 7.875rem;
+      }
 
-        & img {
-          margin-bottom: .5rem;
-          width: 7.875rem;
-        }
+      & p {
+        margin-bottom: .25rem;
+      }
 
-        & p {
-          margin-bottom: .25rem;
-        }
+      & input,
+      & input:hover,
+      & input:focus {
+        all: unset;
+        position: absolute;
+        inset: 0;
+      }
 
-        & input,
-        & input:hover,
-        & input:focus {
-          all: unset;
-          position: absolute;
-          inset: 0;
-        }
+      &:focus,
+      &:active {
+        border: 1px solid var(--brand-light);
+      }
 
-        &:focus,
-        &:active {
-          border: 1px solid var(--brand-light);
-        }
+      & input[type="radio"]:checked {
+        border: 1px solid var(--brand-light);
+        border-radius: .5rem;
+      }
 
-        & input[type="radio"]:checked {
-          border: 1px solid var(--brand-light);
-          border-radius: .5rem;
-        }
-
-        &:hover {
-          background-color: var(--shape-hover);
-        }
-        }
+      &:hover {
+        background-color: var(--shape-hover);
+      }
       }
     }
+  }
 }
