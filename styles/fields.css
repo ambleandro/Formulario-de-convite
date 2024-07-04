@@ -245,8 +245,11 @@ fieldset.custom {
     background-color: var(--cyan);
     }
 
-    & .color-inner input[type="radio"]:checked,
     & .color-inner input[type="radio"]:hover {
+      border-color: var(--shape-hover);
+    }
+
+    & .color-inner input[type="radio"]:checked {
       border: 1px solid var(--brand-light);
     }
 
@@ -297,6 +300,10 @@ fieldset.custom {
         & input[type="radio"]:checked {
           border: 1px solid var(--brand-light);
           border-radius: .5rem;
+        }
+
+        &:hover {
+          background-color: var(--shape-hover);
         }
         }
       }
