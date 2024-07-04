@@ -24,8 +24,8 @@ aside {
 
 main {
   overflow: auto;
-  padding: 1.25rem 1.25rem 1.25rem .625rem; 
-  max-width: 51.25rem;
+  padding: 1.25rem 1.25rem 1.25rem .625rem;
+  max-width: 55.25rem;
 
   & .main-container {
     background-color: var(--shape-body);
