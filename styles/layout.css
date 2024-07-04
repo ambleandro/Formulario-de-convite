@@ -35,6 +35,7 @@ main {
     h1 {
       font: var(--heading-md);
       color: var(--text-heading);
+      margin-bottom: 2.5rem;
     }
   }
 }
