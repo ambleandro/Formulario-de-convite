@@ -30,7 +30,7 @@ main {
   & .main-container {
     background-color: var(--shape-body);
     border-radius: .75rem; 
-    padding: 5rem 8.125rem;
+    padding: 5rem 6.5rem;
 
     h1 {
       font: var(--heading-md);
