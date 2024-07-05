@@ -308,4 +308,62 @@ fieldset.custom {
       }
     }
   }
+
+  .theme-options2 {
+    display: grid;
+    grid-template-columns: 11rem 1fr;
+    margin-top: 1.75rem;
+
+    & .style {
+      display: flex;
+      flex-direction: column;
+
+      label:nth-child(1) {
+        margin-bottom: .75rem;
+      }
+
+      & .style-wrapper {
+        display: grid;
+        grid-template-columns: 4rem 1fr;
+        align-items: center;
+
+        & label {
+          margin-left: .75rem;
+        }
+
+        & input[type="checkbox"] {
+          appearance: none;
+          position: relative;
+          width: 4rem;
+          height: 2rem;
+          background-color: var(--input-base);
+          border: 1px solid var(--input-stroke);
+          border-radius: 1rem;
+        }
+
+        & input[type="checkbox"]::before {
+          content: "";
+          position: absolute;
+          width: 1.5rem;
+          height: 1.5rem;
+          background-color: var(--input-stroke);
+          border-radius: .75rem;
+          top: .20rem;
+          left: .20rem;
+          transition: .4s;
+        }
+
+        & input:checked[type="checkbox"]::before {
+          background-color: var(--text-heading);
+          left: 2.2rem;
+        }
+
+        & input:checked[type="checkbox"] {
+          background-color: var(--brand-light);
+        }
+      }
+
+      
+    }
+  }
 }
