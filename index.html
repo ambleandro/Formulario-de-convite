@@ -248,7 +248,12 @@
 
             <div class="input-wrapper">
               <label for="name">Nome</label>
-              <input type="text" name="name" id="name">
+              <input type="text" name="name" id="name" required>
+
+              <div class="error">
+                <img src="./assets/icons/circle-alert.svg" alt="icone de alerta vermelho">
+                <span>Campo obrigatório</span>
+              </div>
             </div>
 
             <div class="flex-wrapper">
@@ -256,6 +261,7 @@
                 <label for="mail">E-mail</label>
                 <input type="text" name="mail" id="mail">
               </div>
+              
 
               <div class="input-wrapper">
                 <label for="tel">Telefone</label>

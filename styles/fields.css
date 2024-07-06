@@ -286,7 +286,7 @@ fieldset.custom {
   }
 
   & .color-inner input[type="radio"]:checked {
-    outline: 1px solid var(--brand-light);
+    outline: 2px solid var(--brand-light);
   }
 
   & .theme-wrapper {
@@ -440,6 +440,23 @@ fieldset.custom {
        display: none;
       }
     }
+  }
+}
+
+.contact {
+  & input:valid + .error {
+    display: none;
+  }
+}
+
+.contact .error {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  & span {
+    font: var(--body-xs);
+    color: var(--danger);
   }
 }
 
