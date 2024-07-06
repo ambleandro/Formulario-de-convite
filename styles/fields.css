@@ -56,6 +56,42 @@ fieldset.custom {
   }
 }
 
+fieldset.contact {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin-bottom: 3rem;
+
+  & legend {
+    position: relative;
+    font: var(--heading-sm);
+    color: var(--text-body);
+    margin-bottom: 1.625rem;
+
+    padding-left: 2.25rem;
+  }
+
+  & legend::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(../assets/icons/contact.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+fieldset.terms {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin-bottom: 3rem;
+}
+
 .input-wrapper {
   display: flex;
   flex-direction: column;
@@ -363,6 +399,14 @@ fieldset.custom {
         & input:checked[type="checkbox"] {
           background-color: var(--brand-light);
         }
+
+        & input:checked[type="checkbox"] ~ .text::before {
+          content: "Claro";
+        }
+
+        & input[type="checkbox"] ~ .text::before {
+          content: "Escuro";
+        }
       }
     }
 
@@ -397,4 +441,83 @@ fieldset.custom {
       }
     }
   }
+}
+
+fieldset.terms {
+
+  label {
+    font: var(--body-sm);
+    color: var(--text-body);
+    line-height: 1.75rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.checks-wrapper {
+  border-top: 1px solid var(--input-stroke);
+  padding-top: 2.5rem;
+}
+
+.terms-wrapper label {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  padding-left: 2rem;
+}
+
+.terms-wrapper input {
+  display: none;
+}
+
+.terms-wrapper input + label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid var(--input-stroke);
+  background-color: var(--input-base);
+  border-radius: .25rem;
+  margin-right: .75rem;
+}
+
+.terms-wrapper input:checked + label::before {
+  content: "";
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url(../assets/icons/check.svg);
+  background-size: 1.25rem 1.25rem;
+  background-repeat: no-repeat;
+  border: 1px solid var(--brand-light);
+  border-radius: .25rem;
+}
+
+.button {
+  display: grid;
+  justify-content: end;
+}
+
+.button button {
+  display: flex;
+  gap: .75rem;
+  height: 3rem;
+  padding: 0 1.25rem;
+  background-color: var(--brand-dark);
+  border-radius: .25rem;
+  font: var(--body-md);
+  color: var(--text-heading);
+  border: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button label {
+  cursor: pointer;
 }

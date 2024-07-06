@@ -220,13 +220,13 @@
                   <label>Estilo</label>
                   <div class="style-wrapper">
                     <input type="checkbox" name="style" id="style">
-                    <label for="style">Escuro</label>
+                    <label for="style" class="text"></label>
                   </div>
                 </div>
 
                 <div class="cover-image">
                   <label">Foto de capa</label>
-                  
+
                   <div class="file-wrapper">
                     <input type="file" name="file" id="file">
                     <label for="file">
@@ -242,6 +242,61 @@
               </div>
             </div>
           </fieldset>
+
+          <fieldset class="contact">
+            <legend>Dados para contato</legend>
+
+            <div class="input-wrapper">
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name">
+            </div>
+
+            <div class="flex-wrapper">
+              <div class="input-wrapper">
+                <label for="mail">E-mail</label>
+                <input type="text" name="mail" id="mail">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="tel">Telefone</label>
+                <input type="number" name="tel" id="tel">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="terms">
+            <div class="checks-wrapper">
+              <div class="terms-wrapper">
+                <input type="checkbox" id="terms-conditions"/>
+                <label for="terms-conditions">
+                  Li e concordo com os 
+                  <a href="#">Termos e Condições</a> e com a 
+                  <a href="#">Política de Privacidade</a>
+                </label>
+              </div>
+  
+              <div class="terms-wrapper">
+                <input type="checkbox" id="email-updates"/>
+                <label for="email-updates">
+                  Aceito receber atualizações e promoções por e-mail
+                </label>
+              </div>
+  
+              <div class="terms-wrapper">
+                <input type="checkbox" id="sms-updates"/>
+                <label for="sms-updates">
+                  Aceito receber atualizações e promoções por SMS
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="button">
+            <button id="gerar-convite">
+              <img src="./assets/icons/ticket.svg" alt="">
+              <label for="gerar-convite">Gerar convite</label>
+            </button>
+          </div>
 
         </form>
       </div>
